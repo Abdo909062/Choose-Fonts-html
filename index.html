@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        h1, h2 {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #333 0%, #111 100%);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        header {
+            background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff6347;
+        }
+        @media (max-width: 768px) {
+            h1, h2 {
+                font-size: 1.2em;
+                padding: 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Home Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ChooseFonts.html">Choose Fonts</a></li>
+                <li><a href="Paragraph.html">About Mo Salah</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>This is the home page of our website. Navigate through the links to explore more.</p>
+        </section>
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li>Wide variety of fonts</li>
+                <li>Detailed information about Mo Salah</li>
+                <li>Easy navigation</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Gallery</h2>
+            <div class="gallery">
+            </div>
+        </section>
+        <section>
+            <button onclick="window.location.href='ChooseFonts.html'">Go to Choose Fonts</button>
+        </section>
+    </main>
+</body>
+</html>

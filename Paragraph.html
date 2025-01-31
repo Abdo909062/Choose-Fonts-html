@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Mo Salah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        h1, h2 {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #333 0%, #111 100%);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            h1, h2 {
+                font-size: 1.2em;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Mo Salah</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ChooseFonts.html">Choose Fonts</a></li>
+                <li><a href="Paragraph.html">About Mo Salah</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Mo Salah</h2>
+            <p>Mohamed Salah, also known as Mo Salah, is an Egyptian professional footballer who plays as a forward for Premier League club Liverpool and the Egypt national team. Known for his finishing, dribbling, and speed, Salah is considered one of the best players in the world.</p>
+            <img src="images/mo-salah.jpeg" alt="Mo Salah">
+        </section>
+        <section>
+            <h2>Achievements</h2>
+            <ul>
+                <li>Premier League Golden Boot</li>
+                <li>CAF African Player of the Year</li>
+                <li>UEFA Champions League Winner</li>
+                <!-- Add more achievements as needed -->
+            </ul>
+        </section>
+    </main>
+    <section>
+        <button onclick="window.location.href='index.html'">Go to Home Page</button>
+    </section>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const selectedFont = urlParams.get('font');
+            if (selectedFont) {
+                document.body.style.fontFamily = selectedFont;
+            }
+        });
+    </script>
+</body>
+</html>
